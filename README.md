@@ -71,3 +71,16 @@ A última etapa consistiu em carregar a imagem mario.png em um array NumPy e rea
 6. Imagem em Escala de Cinza
 
 Todas as 6 imagens foram exibidas em um único grid de visualização (2x3).
+
+- Foi realizado a plotagem de seis funções de ativação comuns e essenciais para introduzir não-linearidades em modelos de Deep Learning.
+
+- Todas as funções são apresentadas em um único gráfico para comparação direta de seus comportamentos.
+
+O gráfico compara o comportamento das seguintes funções no intervalo de $x$ de $-5$ a $5$:
+- Sigmoide ($\sigma(x)$): Comprime a entrada para o intervalo $(0, 1)$, ideal para a camada de saída em tarefas de classificação binária.
+- Tangente Hiperbólica (Tanh): Comprime a entrada para o intervalo $(-1, 1)$, que muitas vezes é preferível à Sigmoide por ter média em zero.
+- ReLU (Rectified Linear Unit): Define a saída como $\max(0, x)$, sendo a função padrão para camadas intermediárias devido à sua eficiência computacional.
+- Leaky ReLU: Uma variação da ReLU que permite um gradiente pequeno e não-nulo para entradas negativas ($0.01x$), ajudando a mitigar o problema do "neurônio morrendo" (dying ReLU).
+- Swish: Introduzida recentemente, é uma função self-gated dada por $x \cdot \sigma(x)$, conhecida por superar a ReLU em tarefas mais profundas.
+- GeLU (Gaussian Error Linear Unit): Uma função de ativação mais moderna e suave, baseada na distribuição cumulativa normal, frequentemente usada em modelos de linguagem como BERT.
+
