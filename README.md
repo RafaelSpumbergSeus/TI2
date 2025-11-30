@@ -1,4 +1,5 @@
 Nome: Rafael Spumberg
+
 Análise e Modelagem de Performance de Estudantes
 
 Este projeto cobre o processamento, limpeza, análise exploratória e modelagem de um conjunto de dados sobre a performance de estudantes, culminando na implementação de dois algoritmos de regressão (KNN e Regressão Linear) do zero.
